@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Tudo de Bom</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Mercado Tudo de Bom</a></h1>
+    </header>
+    <main>
+        <form>
+                <label for="servico_entrega">Escolha o tipo de serviço:</label>
+                <select name="entrega" id="servico_entrega">
+                    <option value="">Escolha uma das opções abaixo</option>
+                    <option value="tele_entrega">Tele-Entrega</option>
+                    <option value="estabelecimento">Retirada no Estabelecimento</option>
+                </select>
+                <label for="forma_pagamento">Escolha a forma de pagamento:</label>
+                <select name="pagamento" id="forma_pagamento">
+                    <option value="">Escolha uma das opções abaixo</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="pix">Pix</option>
+                    <option value="cartao">Cartão</option>
+                </select>
+                <label for="localizacao">Localização da Entrega</label>
+                <input type="text" placeholder="Rua" id="localizacao"/>
+                <input type="text" placeholder="Número"/>
+                <input type="text" placeholder="Bairro">
+                <input type="text" placeholder="CEP">
+                <label for="quantia_dinheiro">Informe a quantia que será dada em dinheiro</label>
+                <input type="number" placeholder="Quantia em dinheiro" id="quantia_dinheiro" min="1"/>
+
+                <button type="submit"><a href="comprovante.html">Concluir</a></button>
+        </form>
+        <h4>Total da Compra:</h4>
+        <p>R$ 34,90</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mini Mercado - Porto Alegre, RS</p>
+        <p>Telefone: (51) 99876-5432</p>
+        <p>Endereço: Avenida Bento Gonçalves, 456 — Bairro Centro, Porto Alegre, RS, CEP: 90000-000</p>
+    </footer>
+</body>
+</html>
