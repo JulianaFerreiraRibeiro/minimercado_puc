@@ -1,5 +1,5 @@
 # minimercado_puc
-
+https://julianaferreiraribeiro.github.io/minimercado_puc/
 As funcionalidades atuais são:
 
 - Filtro por categoria na barra de navegação, que, com a adição de estilização será na vertical e com a adição do JavaScript possuirá campo de busca por palavras-chaves e preço;
