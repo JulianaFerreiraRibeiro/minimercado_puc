@@ -8,7 +8,12 @@ const gerarProdutoHTML = (produto, lista) => {
     const li = document.createElement("li");
     li.className = "bg-white rounded p-3 d-flex flex-column align-items-center";
 
-    const imagem = `../images/${produto.imagem}`;
+    let imagem;
+    if (window.location.pathname.includes("index.html")) {
+        imagem = `./images/${produto.imagem}`;
+    } else {
+        imagem = `../images/${produto.imagem}`;
+    }
 
     li.innerHTML = `
         <div class="d-flex flex-column align-items-center text-center justify-content-center">
