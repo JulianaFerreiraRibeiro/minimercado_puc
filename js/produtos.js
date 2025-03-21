@@ -10,11 +10,13 @@ const gerarProdutoHTML = (produto, lista) => {
 
     let imagem;
     if (window.location.pathname.includes("index.html")) {
-        imagem = `./images/${produto.imagem}`;
+        // Para GitHub Pages, sempre buscar no diretório raiz
+        imagem = `/minimercado_puc/images/${produto.imagem}`;
     } else {
+        // Para outras páginas, pode continuar com o caminho relativo
         imagem = `../images/${produto.imagem}`;
     }
-
+    
     li.innerHTML = `
         <div class="d-flex flex-column align-items-center text-center justify-content-center">
             <img src="${imagem}" alt="${produto.alt}" width="600"/>
