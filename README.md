@@ -9,3 +9,5 @@ As funcionalidades atuais são:
 - Formulário de preenchimento de dados do cliente, ao clicar no botão do carrinho uma nova página será aberta com os campos do formulário, também ainda não estilizado e não funcional;
 - Seleção de serviço de entrega, ao clicar em "Enviar" no formulário, o cliente será levado a uma página em que decidirá como deseja que seus produtos sejam entregues e qual será a forma de pagamento, também será informado o valor novamente ao usuário;
 - Ao clicar em "Concluir" o cliente é levado para uma página que indica o sucesso de sua compra, os detalhes do que foi pedido e o valor total.
+
+- https://julianaferreiraribeiro.github.io/minimercado_puc/
