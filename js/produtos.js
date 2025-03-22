@@ -10,7 +10,6 @@ const gerarProdutoHTML = (produto, lista) => {
 
     let imagem;
     const path = window.location.pathname;
-    console.log(path);
 
     if (path.includes("/index.html")) {
         imagem = `./images/${produto.imagem}`;
@@ -21,7 +20,6 @@ const gerarProdutoHTML = (produto, lista) => {
     }
     
     
-    console.log(imagem)
 
     li.innerHTML = `
         <div class="d-flex flex-column align-items-center text-center justify-content-center">
