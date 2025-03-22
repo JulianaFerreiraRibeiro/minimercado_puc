@@ -10,7 +10,7 @@ const gerarProdutoHTML = (produto, lista) => {
 
     let imagem;
         if (window.location.pathname.includes("/minimercado_puc/")) {
-    imagem = `/minimercado_puc/images/${produto.imagem}`;
+    imagem = `./minimercado_puc/images/${produto.imagem}`;
     } else {
         imagem = `./images/${produto.imagem}`;
     }
