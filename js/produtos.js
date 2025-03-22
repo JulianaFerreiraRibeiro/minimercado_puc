@@ -9,11 +9,10 @@ const gerarProdutoHTML = (produto, lista) => {
     li.className = "bg-white rounded p-3 d-flex flex-column align-items-center";
 
     let imagem;
-        if (window.location.pathname.includes("/minimercado_puc/")) {
-        imagem = `./minimercado_puc/images/${produto.imagem}`;
-    } else {
-        imagem = `./images/${produto.imagem}`;
-    }
+    const basePath = window.location.pathname.includes("index.html") ? '' : '/minimercado_puc';
+    
+    imagem = `${basePath}/images/${produto.imagem}`;
+    
     
 
     li.innerHTML = `
