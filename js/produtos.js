@@ -17,7 +17,7 @@ const gerarProdutoHTML = (produto, lista) => {
     } else if(path.includes("/pages/")){
         imagem = `../images/${produto.imagem}`;
     } else {
-        imagem = `/minimercado_puc/images/${produto.imagem}`
+        imagem = `/minimercado_puc/tree/main/images/${produto.imagem}`
     }
     
     
