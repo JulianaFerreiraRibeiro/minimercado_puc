@@ -13,8 +13,10 @@ const gerarProdutoHTML = (produto, lista) => {
 
     if (path.includes("/index.html")) {
         imagem = `./images/${produto.imagem}`;
+    } else if(path.includes("/pages/")){
+        imagem = `../images/${produto.imagem}`;
     } else {
-        imagem = `/minimercado_puc/images/${produto.imagem}`;
+        imagem = `/images/${produto.imagem}`
     }
     
     
