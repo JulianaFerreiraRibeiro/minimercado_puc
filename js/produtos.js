@@ -8,12 +8,7 @@ const gerarProdutoHTML = (produto, lista) => {
     const li = document.createElement("li");
     li.className = "bg-white rounded p-3 d-flex flex-column align-items-center";
 
-    let imagem;
-    if (window.location.pathname.includes("pages")) {
-        imagem = `../images/${produto.imagem}`;
-    } else {
-        imagem = `./images/${produto.imagem}`
-    }
+    const imagem = `../images/${produto.imagem}`;
     
     
     
