@@ -10,11 +10,9 @@ const gerarProdutoHTML = (produto, lista) => {
 
     let imagem;
     if (window.location.pathname.includes("index.html")) {
-        // Para GitHub Pages, sempre buscar no diretório raiz
-        imagem = `/minimercado_puc/images/${produto.imagem}`;
+        imagem = './images/${produto.imagem}';
     } else {
-        // Para outras páginas, pode continuar com o caminho relativo
-        imagem = `../images/${produto.imagem}`;
+        imagem = '../images/${produto.imagem}';
     }
     
     
