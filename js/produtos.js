@@ -8,7 +8,11 @@ const gerarProdutoHTML = (produto, lista) => {
     const li = document.createElement("li");
     li.className = "bg-white rounded p-3 d-flex flex-column align-items-center";
 
-    const imagem = `../images/${produto.imagem}`;
+    if (path.includes("/minimercado_puc/")) {
+        imagem = `./images/${produto.imagem}`;
+    } else {
+        imagem = `/minimercado_puc/images/${produto.imagem}`;
+    }
     
     
     
