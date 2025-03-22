@@ -9,10 +9,10 @@ const gerarProdutoHTML = (produto, lista) => {
     li.className = "bg-white rounded p-3 d-flex flex-column align-items-center";
 
     let imagem;
-    if (window.location.pathname.includes("index.html")) {
-        imagem = `/images/${produto.imagem}`;
-    } else {
+    if (window.location.pathname.includes("pages")) {
         imagem = `../images/${produto.imagem}`;
+    } else {
+        imagem = `./images/${produto.imagem}`
     }
     
     
