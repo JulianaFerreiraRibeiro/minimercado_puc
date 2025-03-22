@@ -10,6 +10,7 @@ const gerarProdutoHTML = (produto, lista) => {
 
     let imagem;
     const path = window.location.pathname;
+    console.log(path)
 
     if (path.includes("/index.html")) {
         imagem = `./images/${produto.imagem}`;
