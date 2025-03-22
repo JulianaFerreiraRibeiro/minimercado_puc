@@ -9,9 +9,13 @@ const gerarProdutoHTML = (produto, lista) => {
     li.className = "bg-white rounded p-3 d-flex flex-column align-items-center";
 
     let imagem;
-    const basePath = window.location.hostname === "julianaferreiraribeiro.github.io" ? '/minimercado_puc' : '';
-    
-    imagem = `${basePath}/images/${produto.imagem}`;
+    if (window.location.pathname.includes("index.html")) {
+        // Para GitHub Pages, sempre buscar no diretório raiz
+        imagem = `/minimercado_puc/images/${produto.imagem}`;
+    } else {
+        // Para outras páginas, pode continuar com o caminho relativo
+        imagem = `../images/${produto.imagem}`;
+    }
     
     
     
