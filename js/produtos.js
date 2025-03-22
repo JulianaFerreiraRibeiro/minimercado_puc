@@ -10,9 +10,9 @@ const gerarProdutoHTML = (produto, lista) => {
 
     let imagem;
     if (window.location.pathname.includes("index.html")) {
-        imagem = './images/${produto.imagem}';
+        imagem = `/images/${produto.imagem}`;
     } else {
-        imagem = '../images/${produto.imagem}';
+        imagem = `../images/${produto.imagem}`;
     }
     
     
