@@ -9,5 +9,6 @@ As funcionalidades atuais são:
 - Formulários de cadastro do cliente e de escolha de serviço (dependendo da escolha, há campos que ficam visíveis e outros não);
 - Visualização da compra por meio de um comprovante final, com as informações do usuário e da compra em si;
 - Visualização dos tipos de entregas por meio da barra de navegação
+- Obs Adicional: O formulário de cadastro do usuário estará disponível ao "Finalizar Compra" quando o carrinho estiver com produtos selecionados, sem produtos o botão não está disponível, e após o preenchimento correto do formulário é dado o formulário de entrega e por último o comprovante
 
 - https://julianaferreiraribeiro.github.io/minimercado_puc/
