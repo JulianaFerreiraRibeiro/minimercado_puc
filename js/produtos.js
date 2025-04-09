@@ -157,18 +157,16 @@ export function configurarBotaoFinalizar() {
             alert("Seu carrinho está vazio! Adicione produtos antes de finalizar a compra.");
         } else {
             let redirecionamento;
-            if (window.location.pathname.includes("index.html")) {
-                redirecionamento = "./pages/formulario_cliente.html";
-            } else {
-                redirecionamento = "./formulario_cliente.html"; 
-            }
+            const path = window.location.pathname;
+
+        
 
             if (path.includes("/index.html")) {
-                imagem = "./pages/formulario_cliente.html";
+                redirecionamento = "./pages/formulario_cliente.html";
             } else if(path.includes("/pages/")){
-                imagem = "./formulario_cliente.html";
+                redirecionamento = "./formulario_cliente.html";
             } else {
-                imagem = `https://julianaferreiraribeiro.github.io/minimercado_puc/pages/formulario_cliente.html`
+                redirecionamento = `https://julianaferreiraribeiro.github.io/minimercado_puc/pages/formulario_cliente.html`
             }
             
             window.location.href = redirecionamento;
